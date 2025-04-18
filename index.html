@@ -4,51 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDWIN GACHANJA MAINA</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
     <header>
-      <h1>MY PORTFOLIO</h1>
-      <nav>
-        <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="/About.html">ABOUT ME</a></li>
-          <li><a href="/Contact.html">CONTACT ME</a></li>
-        </ul>
-      </nav>
-    </header>
+      <h3>THE PRO</h3>
     
-    <p>
-      Who is Edwin? Edwin is a dedicated and detail-oriented Geology graduate
-      from the University of Nairobi with hands-on experience in geological
-      mapping, data analysis, and fieldwork. My academic background is
-      complemented by practical training in mineral exploration and data systems
-      through various internships and contract roles. My strong communication
-      and self drive has helped me to work effectively in teams and
-      independently. I am proficient in geological software and tools, including
-      GIS and data analysis software, and have a solid understanding of
-      geological principles and practices. I am eager to contribute my skills
-      and knowledge to a dynamic team in the mining or environmental sector.
-    </p>
-    <img src="Profile.jpeg" alt="Profile Picture" />
-    <p>Listed are my contacts</p>
-    <ol>
-      <li>0716923629</li>
-      <li>gachanjaedwin123@gmail.com</li>
-      <a href="https://www.linkedin.com/in/gachanja-edwin-85a9b020a/"
-        >Linkedin page</a
-      >
-    </ol>
-
-    <footer>
-      <nav>
-      <ul>
-        <li><a href="#">HOME</a></li>
-         <li><a href="/About.html">ABOUT ME</a></li>
-        <li><a href="/Contact.html">CONTACT ME</a></li>
-
-      </ul>
-    </nav>
-    </footer>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#About">ABOUT ME</a></li>
+            <li><a href="#contacts">CONTACT ME</a></li>
+          </ul>
+        </nav>
+      
+    </header>
+    <div class="Hero">
+      <div class="head">
+        <p>Hi,There im <span>Edwin</span></p>
+        <h5>I am a <span> SOFT</span>WARE DEVELOPER</h5>
+        <h5>
+          I'm a passionate and detail-oriented software developer with a strong foundation in designing, developing <br>and deploying scalable applications. With experience across a range of technologies including front-end <br>frameworks, back-end systems, and cloud platforms—I enjoy building clean, efficient code and solving complex problems. <br>Whether collaborating in a team or working independently, I bring a commitment to continuous learning and delivering <br>high-quality solutions that make an impact.</h5>
+      </div>
+      <div class="image">
+        <img src="Profile.jpeg" alt="Profile Picture" />
+      </div>
+    </div>
+    <div class="About" id="About">
+      <div class="Who">
+        <h2>Who am I?</h2>
+      </div>
+      <p>
+        Who is Edwin? Edwin is a dedicated and detail-oriented Geology graduate
+        from the University of Nairobi with hands-on experience in geological
+        mapping, data analysis, and fieldwork. My academic background is
+        complemented by practical training in mineral exploration and data
+        systems through various internships and contract roles. <br />
+        My strong communication and self drive has helped me to work effectively
+        in teams and independently. I am proficient in geological software and
+        tools, including GIS and data analysis software, and have a solid
+        understanding of geological principles and practices. I am eager to
+        contribute my skills and knowledge to a dynamic team in the mining or
+        environmental sector.
+      </p>
+    </div>
+    <div class="contacts" id="contacts">
+      <h1>Contact Me</h1>
+      <div class="con">
+        <p>Feel free to reach out to me through the following channels:</p>
+        <p>Listed are my contacts</p>
+        <ol>
+          <li>Phone Number-0716923629</li>
+          <li>gachanjaedwin123@gmail.com</li>
+          <a href="https://www.linkedin.com/in/gachanja-edwin-85a9b020a/"
+            >Linkedin page</a
+          >
+        </ol>
+      </div>
+    </div>
+    <div class="footer">
+      <footer>
+        
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#About">ABOUT ME</a></li>
+              <li><a href="#contacts">CONTACT ME</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="form">
+          <form action="submit">
+            <label for="Feedback">Feedback</label>
+            <input
+              type="text"
+              id="Feedback"
+              name="Feedback"
+              placeholder="Type your Feedback"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

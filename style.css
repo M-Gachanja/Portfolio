@@ -1,0 +1,130 @@
+*{
+    
+    font-size: 60px;
+}
+body{
+    background-color: gray;
+
+}
+
+.logo{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    justify-content: left;
+    background-color: gray;
+    position: absolute;
+    top: 0.5;
+    
+
+}
+.Hero{
+    height: 50vh;
+    background-color: gray;
+    display: inline-flex ;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    top: 25px;
+}
+.head{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 50px;
+    
+    
+}
+.image{
+    position: absolute;
+    left: 1000px;
+    
+}
+.About{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+
+}
+h2{
+    color: rgb(16, 185, 16);
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+h1{
+    color: rgb(16, 185, 16);
+    font-weight: bold;
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar2 ul{
+    align-content: end;
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+}
+.con{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+    font-style: italic; ;
+}
+
+img{
+    border: solid 5px green;
+    border-radius: 50%;
+    justify-items: end;
+}
+.form{
+    color: white;
+    justify-content: center;
+}
+h3{
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    color: white;
+}
+.header-nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.header-nav ul li a:hover{
+    color: rgb(0, 174, 70);
+    text-decoration: underline;
+}
+.footer-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    color: white;
+}
+.footer-nav ul li a{
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.footer-nav ul li a:hover{
+    color: rgb(0, 174, 70);
+    text-decoration: underline;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+.Hero span{
+    color: green;
+}
+.Hero .image{
+    margin-top: 0%;
+    margin-left: 50%;
+    width: 50%;
+    height: fit-content;
+    zoom: 2.3;
+}
