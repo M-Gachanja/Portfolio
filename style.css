@@ -56,12 +56,6 @@ h1{
     font-size: 100px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.navbar2 ul{
-    align-content: end;
-    justify-content: space-around;
-    display: flex;
-    list-style: none;
-}
 .con{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:white;
@@ -83,7 +77,7 @@ h3{
 header{
     display: flex;
     justify-content: space-between;
-
+    background-color: green;
 }
 .header-nav ul{
     display: flex;
