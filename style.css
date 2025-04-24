@@ -2,7 +2,6 @@
     font-size: 45px;
     max-width: 100%;
     height: auto;
-    padding: 1rem;
 }
 body{
     background-color: gray;
@@ -68,6 +67,10 @@ img{
     border: solid 5px green;
     border-radius: 50%;
     justify-items: end;
+    margin-top: 20%;
+    margin-left: 500%;
+    margin-right: 10%;
+    width: 500px;
 }
 .form{
     color: white;
@@ -117,11 +120,16 @@ footer{
 .Hero span{
     color: green;
 }
-.Hero .image{
+/* .Hero .image{
     margin-top: 0%;
     margin-left: 50%;
     width: 50%;
     height: fit-content;
     zoom: 2.3;
     max-width: 100%;
-}
+} */
+@media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+    }
+  }
