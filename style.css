@@ -1,135 +1,180 @@
-*{
-    font-size: 45px;
-    max-width: 100%;
-    height: auto;
-}
-body{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: gray;
-
-}
-
-.logo{
-    font-size: 50px;
     color: white;
-    font-weight: bold;
-    justify-content: left;
-    background-color: gray;
-    position: absolute;
-    top: 0.5;
-    
+    line-height: 1.6;
+  }
 
-}
-.Hero{
-    height: 50vh;
-    background-color: gray;
-    display: inline-flex ;
-    justify-content: space-between;
-    gap: 50px;
-    position: relative;
-    top: 25px;
-}
-.head{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    font-size: 50px;
-    
-    
-}
-.image{
-    position: absolute;
-    left: 1000px;
-    
-}
-.About{
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
-
-}
-h2{
-    color: rgb(16, 185, 16);
-    font-size: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-h1{
-    color: rgb(16, 185, 16);
-    font-weight: bold;
-    font-size: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.con{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:white;
-    font-style: italic; ;
-}
-
-img{
-    border: solid 5px green;
-    border-radius: 50%;
-    justify-items: end;
-    margin-top: 20%;
-    margin-left: 500%;
-    margin-right: 10%;
-    width: 500px;
-}
-.form{
-    color: white;
-    justify-content: center;
-}
-h3{
-    color: white;
-}
-header{
+  header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
     background-color: green;
-}
-.header-nav ul{
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .header-nav ul {
     display: flex;
     list-style: none;
-    gap: 18px;
-    color: white;
-}
-.header-nav ul li a{
-    color: white;
-    text-decoration: none;
-}
-.header-nav ul li a:hover{
-    color: rgb(0, 174, 70);
-    text-decoration: underline;
-}
-.footer-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 18px;
-    color: white;
-}
-.footer-nav ul li a{
+    gap: 1rem;
+  }
+
+  .header-nav ul li a {
     color: white;
     text-decoration: none;
-    justify-content: space-between;
-}
-.footer-nav ul li a:hover{
-    color: rgb(0, 174, 70);
+  }
+
+  .header-nav ul li a:hover {
     text-decoration: underline;
-}
-footer{
+    color: lightgreen;
+  }
+
+  .Hero {
     display: flex;
-    justify-content: center;
-}
-.Hero span{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .head {
+    max-width: 600px;
+  }
+
+  .head p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .head h5 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .Hero span {
     color: green;
-}
-/* .Hero .image{
-    margin-top: 0%;
-    margin-left: 50%;
-    width: 50%;
-    height: fit-content;
-    zoom: 2.3;
-    max-width: 100%;
-} */
-@media (max-width: 768px) {
-    .nav {
+  }
+
+  .image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid green;
+    border-radius: 50%;
+  }
+
+  .About,
+  .contacts {
+    padding: 2rem;
+  }
+
+  .About h2,
+  .contacts h1 {
+    color: lightgreen;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contacts ol {
+    padding-left: 1.5rem;
+  }
+
+  .contacts a {
+    color: lightblue;
+    text-decoration: underline;
+  }
+
+  .footer {
+    padding: 2rem;
+    background-color: #222;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-nav ul li a:hover {
+    color: lightgreen;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  .form input {
+    padding: 0.5rem;
+    width: 250px;
+    margin: 0.5rem;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .form button {
+    padding: 0.5rem 1rem;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form button:hover {
+    background-color: darkgreen;
+  }
+
+  @media (max-width: 768px) {
+    .Hero {
       flex-direction: column;
+      text-align: center;
+    }
+
+    .image img {
+      margin-top: 1.5rem;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .header-nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .head p,
+    .head h5 {
+      font-size: 1rem;
+    }
+
+    .About h2,
+    .contacts h1 {
+      font-size: 1.5rem;
     }
   }
